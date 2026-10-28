@@ -1,0 +1,25 @@
+@host = http://localhost:5093
+
+GET {{host}}/api/tracking/before?take=5
+###
+GET {{host}}/api/tracking/after?take=5
+###
+GET {{host}}/api/tracking/orders/1
+###
+GET {{host}}/api/nplusone/before?take=5
+###
+GET {{host}}/api/nplusone/after?take=5
+###
+GET {{host}}/api/materialization/before?take=10&status=Shipped&placedAfter=2024-02-01T00:00:00Z
+###
+GET {{host}}/api/materialization/after?take=10&status=Shipped&placedAfter=2024-02-01T00:00:00Z
+###
+GET {{host}}/api/projection/before?take=5
+###
+GET {{host}}/api/projection/after?take=5
+###
+GET {{host}}/api/sql-inspection/before?take=5&status=Shipped&placedAfter=2024-02-01T00:00:00Z
+###
+GET {{host}}/api/sql-inspection/after?take=5&status=Shipped&placedAfter=2024-02-01T00:00:00Z
+###
+GET {{host}}/api/sql-inspection/diagnostics?take=5&status=Shipped&placedAfter=2024-02-01T00:00:00Z

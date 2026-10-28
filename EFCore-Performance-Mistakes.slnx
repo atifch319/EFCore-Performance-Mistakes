@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EFCore.Performance.Api/EFCore.Performance.Api.csproj" />
+    <Project Path="src/EFCore.Performance.Benchmarks/EFCore.Performance.Benchmarks.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EFCore.Performance.Tests/EFCore.Performance.Tests.csproj" />
+  </Folder>
+</Solution>
